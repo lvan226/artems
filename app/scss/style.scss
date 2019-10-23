@@ -1,0 +1,252 @@
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+// Menu start
+.menu {
+  position: relative;
+  z-index: 2;
+  &__inner {
+    padding: 18px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 24px;
+    color: #fff;
+    max-width: 200px;
+    line-height: 30px;
+    @include sf400;
+  }
+  &__list {
+    font-size: 14px;
+    a{
+      transition: all .3s;
+    }
+    li {
+      font-size: 14px;
+      @include sf400;
+      &:hover {
+        a {
+          color: $hover;
+        }
+      }
+      & + li {
+        margin-left: 80px;
+      }
+    }
+  }
+}
+.menu__contact {
+  text-align: center;
+}
+.menu__contact-social {
+  margin-bottom: 10px;
+  a + a {
+    margin-left: 36px;
+  }
+}
+.menu__contact-btn {
+  display: block;
+  width: 196px;
+  margin: 0 auto;
+}
+// Menu end
+
+// Header start
+.wrap-header {
+  background: url(../images/header/header-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  z-index: 1;
+}
+.header {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  @include sf400;
+  &__inner {
+    padding-top: 90px;
+    padding-bottom: 380px;
+    position: relative;
+  }
+}
+.header__content {
+  max-width: 800px;
+}
+.header__title {
+  @include sf600;
+  font-size: 56px;
+  line-height: 72px;
+  margin-bottom: 15px;
+  span {
+    color: $blue;
+  }
+}
+.header__subtitle {
+  font-size: 27px;
+  line-height: 36px;
+  max-width: 690px;
+  padding-bottom: 90px;
+  margin-bottom: 90px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $blue;
+  }
+}
+.header__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 110px;
+  max-width: 770px;
+  width: 100%;
+  &-text {
+    padding-left: 68px;
+    font-size: 21px;
+    position: relative;
+    max-width: 330px;
+    width: 100%;
+    margin-bottom: 60px;
+    line-height: 27px;
+    img {
+      max-width: 50px;
+      position: absolute;
+      left: 0;
+    }
+    span {
+      max-width: 253px;
+    }
+  }
+}
+.header__btn {
+  width: 270px;
+}
+.header__img {
+  position: absolute;
+  right: 0;
+  bottom: 345px;
+  &-text {
+    max-width: 370px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    @include sf600;
+    margin: 0 auto;
+  }
+}
+// Header end
+
+// Social start
+.social {
+  transform: skew(0, 4deg);
+  position: relative;
+  z-index: 2;
+}
+.social-wrap {
+  background: url(../images/social-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 500px;
+  transform: skew(0, -4deg);
+  position: relative;
+  z-index: 5;
+  margin-top: -230px;
+}
+.social-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: 0.7;
+  z-index: 1;
+}
+.social__wrap-inner{
+  padding-top: 100px;
+}
+.social__title {
+  margin: 0 auto;
+  margin-bottom: 85px;
+}
+.social__inner {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.social__item {
+  max-width: 240px;
+  text-align: center;
+  align-items: flex-start;
+  &-title {
+    font-size: 21px;
+    margin-bottom: 23px;
+    @include sf400;
+  }
+  &-text {
+    font-size: 17px;
+    line-height: 24px;
+    @include sf400;
+    max-width: 218px;
+  }
+}
+// Social end
+
+// Reasons start
+.reasons {
+  background: url(../images/reason-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: -200px;
+  &__inner {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &-wrap {
+      position: relative;
+      z-index: 2;
+      padding-top: 350px;
+      padding-bottom: 100px;
+    }
+  }
+  &__item {
+    text-align: center;
+    @include sf400;
+    max-width: 215px;
+    width: 100%;
+    img {
+      margin-bottom: 18px;
+    }
+    &-title{
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+    &-text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+.reasons__title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+// Reasons end
+@import 'media';

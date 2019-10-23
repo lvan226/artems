@@ -1,0 +1,11 @@
+$hover: #8d8d8d;
+$blue: #66bbff;
+
+@mixin sf400 {
+  font-family: 'SF Pro Display';
+  font-weight: 400;
+}
+@mixin sf600 {
+  font-family: 'SF Pro Display';
+  font-weight: 600;
+}
