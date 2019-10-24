@@ -48,7 +48,9 @@
 .menu__contact {
   text-align: center;
 }
-
+.social__inner {
+  padding-bottom: 50px;
+}
 .menu__contact-social {
   margin-bottom: 10px;
 
@@ -274,6 +276,7 @@
 
     img {
       margin-bottom: 18px;
+      max-height: 50px;
     }
 
     &-title {
@@ -366,17 +369,17 @@
   line-height: 23px;
   @include sf400;
   margin-bottom: 20px;
-  height: 917px;
+  height: 940px;
   h4,
   p {
     margin: 0;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     @include sf400;
   }
 
   ul,
   ol {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   span {
@@ -428,10 +431,11 @@
   background-size: cover;
   background-color: #fff;
   min-height: 917px;
+  height: 917px;
   &.bg2 {
     background: url(../images/results/case-bg2.jpg) center no-repeat;
     .results-case__text {
-      padding-top: 45px;
+      padding-top: 35px;
     }
   }
 }
@@ -440,7 +444,7 @@
   max-width: 465px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 0px 0px;
+  padding: 26px 0px 0px;
 }
 
 .results__case-slide {

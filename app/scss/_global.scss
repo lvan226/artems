@@ -9,6 +9,8 @@ html {
 body{
   line-height: 24px;
   overflow-x: hidden;
+  position: relative;
+  // height: 100%;
 }
 img {
   max-width: 100%;
@@ -34,6 +36,11 @@ h1,h2,h3 {
   padding: 0px 10px;
   margin: 0 auto;
 }
+@media (max-width: 960px) {
+  .container {
+    padding: 0 25px;
+  }
+}
 .btn {
   border: none;
   background-image: linear-gradient(to top, #0070c9 0%, #42a1ec 100%);
@@ -52,4 +59,22 @@ h1,h2,h3 {
   line-height: 46px;
   color: #000;
   text-align: center;
+}
+@media (max-width: 960px) {
+  .title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
