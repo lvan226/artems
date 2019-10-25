@@ -48,9 +48,11 @@
 .menu__contact {
   text-align: center;
 }
+
 .social__inner {
   padding-bottom: 50px;
 }
+
 .menu__contact-social {
   margin-bottom: 10px;
 
@@ -184,13 +186,17 @@
 // Header end
 
 // Social start
-.social {
+.social,
+.promotion,
+.remember {
   transform: skew(0, 4deg);
   position: relative;
   z-index: 2;
 }
 
-.social-wrap {
+.social-wrap,
+.promotion-wrap,
+.remember-wrap {
   background: url(../images/social-bg.jpg) center no-repeat;
   background-size: cover;
   height: 500px;
@@ -200,7 +206,8 @@
   margin-top: -230px;
 }
 
-.social-overlay {
+.social-overlay,
+.promotion-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -211,7 +218,9 @@
   z-index: 1;
 }
 
-.social__wrap-inner {
+.social__wrap-inner,
+.promotion__inner,
+.remember__inner {
   padding-top: 100px;
 }
 
@@ -370,6 +379,7 @@
   @include sf400;
   margin-bottom: 20px;
   height: 940px;
+
   h4,
   p {
     margin: 0;
@@ -432,6 +442,7 @@
   background-color: #fff;
   min-height: 917px;
   height: 917px;
+
   &.bg2 {
     background: url(../images/results/case-bg2.jpg) center no-repeat;
     .results-case__text {
@@ -450,6 +461,7 @@
 .results__case-slide {
   height: 100%;
   width: 100%;
+
   img {
     width: 100%;
     height: 100%;
@@ -487,6 +499,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .results__subtitle {
   @include sf400;
   font-size: 24px;
@@ -494,5 +507,526 @@
   color: #fff;
   text-align: center;
 }
+
+.results__inner {
+  padding-bottom: 380px;
+}
+
 // Results end
+
+// Promotion start
+.promotion__inner {
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.promotion__title {
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+.promotion__subtitle {
+  color: #000;
+  font-size: 21px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.promotion__btn {
+  width: 236px;
+  padding: 0px 5px;
+}
+
+.promotion-wrap {
+  background-image: url(../images/promotion.jpg);
+  height: auto;
+}
+
+.promotion-overlay {
+  opacity: 0.8;
+}
+
+// Promotion end
+
+// Rate start
+.rate {
+  background: #000 url(../images/rate/rate-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  margin-top: -162px;
+  text-align: center;
+
+  .overlay {
+    opacity: 0.8;
+  }
+
+  &__inner {
+    padding-top: 292px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 100px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: 27px;
+    margin-bottom: 60px;
+    @include sf400;
+    text-align: center;
+    border-bottom: 1px solid $blue;
+    display: inline-block;
+  }
+}
+
+.rate__row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rate__item-footer {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.rate__item {
+  max-width: 508px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 170px;
+  margin-bottom: 84px;
+  text-align: left;
+  position: relative;
+
+  &-name {
+    font-size: 21px;
+    background-color: $blue;
+    text-align: center;
+    padding: 20px 10px 17px;
+    color: #fff;
+    margin-bottom: 12px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  &-list {
+    padding: 0px 48px;
+    margin-bottom: 30px;
+
+    li {
+      padding: 12px 0px 9px 33px;
+      line-height: 24px;
+      font-size: 14px;
+      display: block;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 0;
+        top: 18px;
+        background: url(../images/rate/figure.png) center no-repeat;
+        background-size: cover;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $blue;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-time {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 260px;
+  }
+}
+
+// Rate end
+// Promise start
+.promise {
+  background: #fff url(../images/promise/promise.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    background-color: #fff;
+    opacity: 0.8;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    padding: 50px 0px;
+  }
+
+  &__title {
+    margin-bottom: 84px;
+  }
+}
+
+.promise__item {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+
+  img {
+    height: 50px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    .decor-top {
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .decor-bottom {
+      &::before {
+        bottom: 0px;
+        left: 0;
+        top: auto;
+      }
+
+      &::after {
+        bottom: 0px;
+        right: 0;
+        top: auto;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+    padding-bottom: 21px;
+    position: relative;
+    margin-bottom: 16px;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $blue;
+    }
+  }
+
+  &-text {
+    line-height: 24px;
+    font-size: 18px;
+    max-width: 291px;
+  }
+}
+
+// Promise end
+// Workers start
+.workers {
+  background: #000 url(../images/workers/workers-bg.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+
+  .overlay {
+    opacity: .8;
+  }
+
+  &__inner {
+    padding: 100px 0px 330px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 45px;
+  }
+
+  &__signature {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+.workers__item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 343px;
+  max-width: 228px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  &:hover {
+    .workers__item-text {
+      transform: translateY(0%);
+    }
+  }
+
+  &-text {
+    background-color: #000;
+    height: 132px;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    width: 100%;
+    transition: all .5s;
+    text-align: center;
+    padding: 6px 8px;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
+
+// Workers end
+
+// Remember start
+.remember {
+  background-color: transparent;
+
+  &__inner {
+    padding-bottom: 100px;
+  }
+}
+
+.remember__title {
+  margin-bottom: 80px;
+}
+
+.remember-wrap {
+  background-image: none;
+  background-color: #fff;
+  height: auto;
+}
+
+.remember__content-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.remember__content {
+  max-width: 608px;
+  position: relative;
+  height: 100%;
+
+  p {
+    @include sf400;
+    color: #000;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 21px;
+    line-height: 26px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.decor-top,
+.decor-bottom {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.decor-top {
+  &::before {
+    border-top: 2px solid $blue;
+    border-left: 2px solid $blue;
+    bottom: 100%;
+    right: 100%;
+  }
+
+  &::after {
+    border-top: 2px solid $blue;
+    border-right: 2px solid $blue;
+    bottom: 100%;
+    left: 100%;
+  }
+}
+
+.decor-bottom {
+  &::before {
+    border-bottom: 2px solid $blue;
+    border-left: 2px solid $blue;
+    top: 100%;
+    right: 100%;
+  }
+
+  &::after {
+    border-bottom: 2px solid $blue;
+    border-right: 2px solid $blue;
+    top: 100%;
+    left: 100%;
+  }
+}
+
+.remember__img {
+  border: 5px solid $blue;
+  margin-left: 100px;
+
+  img {
+    transform: translate(-30px, -30px);
+  }
+}
+
+.remember__btn {
+  width: 167px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+// Remember end
+// Cost start
+.cost {
+  position: relative;
+  background: #fff url(../images/cost-bg.jpg) center no-repeat;
+  background-size: cover;
+  margin-top: -170px;
+
+  .overlay {
+    opacity: 0.8;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 75px;
+  }
+}
+
+.cost__inner {
+  padding-top: 360px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.cost__btn {
+  width: 260px;
+}
+
+// Cost end
+// Footer start
+.footer {
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c3c3b;
+  @include ui300;
+  a {
+    color: #3c3c3b;
+  }
+  &__inner {
+    padding: 100px 60px;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    color: #000;
+    @include ui400;
+  }
+  &__copy {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+  &__list {
+    li {
+      margin-bottom: 18px;
+      display: block; 
+    }
+  }
+}
+.footer__instagram,
+.footer__vk,
+.footer__contact {
+  max-width: 170px;
+}
+.footer__contact-social {
+  a + a{
+    margin-left: 11px;
+  }
+}
+.footer__number {
+  margin-bottom: 18px;
+}
+// Footer end
 @import 'media';

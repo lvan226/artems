@@ -14,3 +14,19 @@
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SF UI  Text';
+  src: url('../fonts/SFUIText-Regular.woff2') format('woff2'),
+      url('../fonts/SFUIText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF UI  Text';
+  src: url('../fonts/') format('woff2'),
+      url('../fonts/SFUIText-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
