@@ -607,7 +607,7 @@
   margin-bottom: 84px;
   text-align: left;
   position: relative;
-
+  @include sf400;
   &-name {
     font-size: 21px;
     background-color: $blue;
@@ -682,7 +682,7 @@
   background: #fff url(../images/promise/promise.jpg) center no-repeat;
   background-size: cover;
   position: relative;
-
+  @include sf400;
   .overlay {
     background-color: #fff;
     opacity: 0.8;
@@ -702,7 +702,7 @@
 .promise__item {
   margin-bottom: 20px;
   text-align: center;
-  max-width: 300px;
+  max-width: 305px;
   width: 100%;
 
   img {
@@ -722,11 +722,15 @@
       &::before {
         top: 0;
         left: 0;
+        right: auto;
+        bottom: auto;
       }
 
       &::after {
         top: 0;
         right: 0;
+        left: auto;
+        bottom: auto;
       }
     }
 
@@ -734,12 +738,14 @@
       &::before {
         bottom: 0px;
         left: 0;
+        right: auto;
         top: auto;
       }
 
       &::after {
         bottom: 0px;
         right: 0;
+        left: auto;
         top: auto;
       }
     }
@@ -751,7 +757,6 @@
     position: relative;
     margin-bottom: 16px;
     display: inline-block;
-
     &::after {
       content: "";
       position: absolute;
@@ -796,13 +801,11 @@
   &__signature {
     font-size: 21px;
     text-align: center;
+    @include sf400;
   }
 }
 
 .workers__item {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   height: 343px;
   max-width: 228px;
   width: 100%;
@@ -810,6 +813,12 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  &2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
 
   &:hover {
     .workers__item-text {
@@ -838,6 +847,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
+    position: relative;
   }
 }
 
@@ -984,7 +994,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #3c3c3b;
-  @include ui300;
+  @include sf300;
   a {
     color: #3c3c3b;
   }
@@ -1001,7 +1011,7 @@
     line-height: 18px;
     margin-bottom: 20px;
     color: #000;
-    @include ui400;
+    @include sf400;
   }
   &__copy {
     max-width: 100%;
