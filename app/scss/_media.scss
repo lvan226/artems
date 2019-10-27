@@ -197,14 +197,20 @@
   .remember__img {
     display: none;
   }
+
   .remember__inner {
     padding-bottom: 150px;
   }
 }
 
 @media (max-width: 960px) {
+
   .menu {
-    z-index: 9999;
+    z-index: 25;
+  }
+
+  .workers__item .workers__item-text {
+    transform: translateY(0%);
   }
 
   .menu__list {
@@ -372,6 +378,20 @@
   .remember__inner {
     padding-top: 50px;
   }
+
+  .menu.fixed {
+    .menu__contact {
+      display: none;
+    }
+
+    .menu__inner {
+      padding-bottom: 0px;
+    }
+  }
+
+  .header.fixed {
+    padding-top: 158px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -452,14 +472,57 @@
   .results__title {
     margin-bottom: 40px;
   }
+
   .footer__inner {
     padding: 50px 0px;
   }
+
   .footer__inner-list {
     display: block;
   }
+
   .footer__title {
     margin-top: 40px;
+  }
+
+  .results-case__text-wrap {
+    background-position-y: -10px;
+  }
+
+  .results-case__text-wrap.bg2 {
+    background-position-y: -45px;
+  }
+
+  .modal {
+    max-width: 540px;
+
+    &.active {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+    &__suptitle {
+      font-size: 14px;
+      line-height: 16px;
+      left: 10px;
+      top: 10px;
+    }
+
+    label {
+      font-size: 16px;
+    }
+
+    input {
+      font-size: 14px;
+      padding: 0px 5px 2px 0px;
+    }
   }
 }
 
@@ -688,6 +751,42 @@
   .cost__title {
     margin-bottom: 50px;
   }
+
+  .header.fixed {
+    padding-top: 144px;
+  }
+
+  .modal {
+    max-width: 300px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    &__title {
+      font-size: 15px;
+      line-height: 17px;
+      margin-bottom: 10px;
+    }
+
+    &__suptitle {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+
+    input {
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    label {
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -712,21 +811,26 @@
     line-height: 18px;
     margin-bottom: 18px;
   }
+
   .footer {
     font-size: 12px;
     line-height: 12px;
 
   }
+
   .footer__title {
     font-size: 14px;
     margin-bottom: 15px;
   }
+
   .footer__list li {
     margin-bottom: 9px;
   }
+
   .footer__contact .footer__title {
     margin-top: 0;
   }
+
   .footer__copy {
     margin-top: 35px;
   }
@@ -865,6 +969,7 @@
   .workers__signature {
     font-size: 16px;
   }
+
   .cost .container {
     padding: 0px 23px;
   }
