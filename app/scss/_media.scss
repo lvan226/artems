@@ -2,6 +2,15 @@
   overflow-y: hidden;
 }
 
+.results__case-slide {
+  height: 917px;
+  display: flex !important;
+  align-items: center;
+  img {
+    height: auto;
+  }
+}
+
 .menu__burger {
   width: 20px;
   position: absolute;

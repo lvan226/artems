@@ -1045,6 +1045,13 @@
 .footer__number {
   margin-bottom: 18px;
 }
+#footer__list, #footer__list2 {
+  a {
+    &:hover {
+      color: #8d8d8d;
+    }
+  }
+}
 // Footer end
 
 // Modal start
