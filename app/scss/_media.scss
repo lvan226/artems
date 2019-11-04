@@ -2,14 +2,6 @@
   overflow-y: hidden;
 }
 
-.results__case-slide {
-  height: 917px;
-  display: flex !important;
-  align-items: center;
-  img {
-    height: auto;
-  }
-}
 
 .menu__burger {
   width: 20px;
@@ -218,10 +210,6 @@
     z-index: 25;
   }
 
-  .workers__item .workers__item-text {
-    transform: translateY(0%);
-  }
-
   .menu__list {
     position: fixed;
     left: 0;
@@ -239,11 +227,15 @@
 
     li {
       display: block;
-      padding: 14px 0px;
+      padding: 0px 0px;
       margin: 0 15px;
       line-height: 14px;
       position: relative;
       margin-left: 15px;
+      a{
+        padding: 14px 0px;
+        display: block;
+      }
 
       &::before {
         content: "";
@@ -524,7 +516,7 @@
       top: 10px;
     }
 
-    label {
+    span {
       font-size: 16px;
     }
 
@@ -772,14 +764,16 @@
     padding-right: 4px;
 
     &__title {
-      font-size: 15px;
-      line-height: 17px;
-      margin-bottom: 10px;
+      font-size: 11px;
+      line-height: 14px;
+      margin-bottom: 15px;
     }
 
     &__suptitle {
       font-size: 12px;
       line-height: 14px;
+      max-width: 110px;
+      font-size: 11px;
     }
 
     button {
@@ -787,13 +781,15 @@
     }
 
     input {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 13px;
+      padding-bottom: 5px;
     }
 
-    label {
-      font-size: 13px;
-      margin-bottom: 7px;
+    .label-hover span {
+      font-size: 11px;
+      margin-bottom: 0px;
+      bottom: 0;
     }
   }
 }

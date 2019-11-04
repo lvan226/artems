@@ -15,7 +15,7 @@
 
   <div class="wrap-header">
     <div class="overlay"></div>
-    <nav class="menu" id="menu">
+    <nav class="menu">
       <div class="container">
         <div class="menu__inner">
           <div class="menu__title">
@@ -26,7 +26,7 @@
             <span></span>
             <span></span>
           </div>
-          <ul class="menu__list">
+          <ul class="menu__list" id="menu">
             <li><a href="#reasons">О нас</a></li>
             <li><a href="#results">Кейсы</a></li>
             <li><a href="#services">Услуги</a></li>
@@ -34,10 +34,10 @@
           </ul>
           <div class="menu__contact">
             <div class="menu__contact-social">
-              <a href="#"><img src="images/icons/instagram.png" alt="instagram"></a>
-              <a href="#"><img src="images/icons/vk.png " alt="Вконтакте"></a>
-              <a href="#"><img src="images/icons/telegram.png" alt="telegram"></a>
-              <a href="#"><img src="images/icons/whatsup.png" alt="whatsapp"></a>
+              <a href="https://www.instagram.com/ar.alekseev"><img src="images/icons/instagram.png" alt="instagram"></a>
+              <a href="https://vk.com/ar.alekseev"><img src="images/icons/vk.png " alt="Вконтакте"></a>
+              <a href="tg://resolve?domain=ar_alekseev"><img src="images/icons/telegram.png" alt="telegram"></a>
+              <a href="https://wa.me/79234567890"><img src="images/icons/whatsup.png" alt="whatsapp"></a>
             </div>
             <button class="menu__contact-btn btn">
               Заказать звонок
@@ -240,9 +240,9 @@
           </div>
           <div class="services__item">
             <img src="images/services/key.svg" alt="Ключ">
-            <div class="services__item-text">
+            <div class="services__item-text services__item-text--key">
               SMM-продвижение
-              вашего бизнеса <br>
+              вашего бизнеса
               под ключ
             </div>
           </div>
@@ -449,10 +449,6 @@
 
           <div class="results__case results-case">
             <div class="results__case-slide">
-              <img src="images/results/case-4-bg.png" alt="">
-            </div>
-
-            <div class="results__case-slide">
               <img src="images/results/1.png" alt="">
             </div>
 
@@ -477,7 +473,7 @@
             </div>
 
             <div class="results__case-slide">
-              <img src="images/results/4.png" alt="">
+              <img src="images/results/7.png" alt="">
             </div>
 
 
@@ -853,7 +849,7 @@
               <div class="workers__item-text">
                 Вячеслав Подосёнов — <br>
                 digital designer. <br>
-                Четыре года строит сайты.
+                Два года строит сайты.
               </div>
             </div>
           </div>
@@ -972,10 +968,10 @@
             <div class="footer__title">Контакты</div>
             <a href="tel:79819761560" class="footer__number">+7 (981) 976-15-60</a>
             <div class="footer__contact-social">
-              <a href="#"><img src="images/icons/instagram.png" alt="instagram"></a>
-              <a href="#"><img src="images/icons/vk.png " alt="Вконтакте"></a>
-              <a href="#"><img src="images/icons/telegram.png" alt="telegram"></a>
-              <a href="#"><img src="images/icons/whatsup.png" alt="whatsapp"></a>
+              <a href="https://www.instagram.com/ar.alekseev"><img src="images/icons/instagram.png" alt="instagram"></a>
+              <a href="https://vk.com/ar.alekseev"><img src="images/icons/vk.png " alt="Вконтакте"></a>
+              <a href="tg://resolve?domain=ar_alekseev"><img src="images/icons/telegram.png" alt="telegram"></a>
+              <a href="https://wa.me/79234567890"><img src="images/icons/whatsup.png" alt="whatsapp"></a>
             </div>
           </div>
           <div class="footer__instagram">
@@ -1016,17 +1012,25 @@
     </div>
     <div class="modal__title">
       Здравствуйте! <br>
-      Для получения консультации и расчета стоимости продвижения вашего бизнеса в сети, пожалуйста, оставьте свои
-      контактные данные. В ближайшее время
+      Для получения консультации и расчета <br> стоимости продвижения вашего бизнеса в <br> сети, пожалуйста, оставьте
+      свои
+      контактные <br> данные. В ближайшее время <br>
       мы с вами свяжемся.
     </div>
-    <form action="mail.php" method="post">
-      <label>
-        Ваше имя
-        <input name="user_name" type="text" required>
+    <form>
+      <input type="text" name="Название формы" value="Оставить заявку" style="display: none !important;">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="SMM Агенство Артема Алексеева">
+      <input type="hidden" name="admin_email" value="info@lvan-dyadyura.ru">
+      <input type="hidden" name="form_subject" value="Заявка с сайта">
+      <!-- END Hidden Required Fields -->
+      <label class="label-hover">
+        <span>Ваше имя</span>
+        <input name="Имя" type="text" required>
       </label>
-      <label>
-        <input name="user_phone" class="phone-input" type="text" placeholder="Ваш номер телефона" required>
+      <label class="label-hover">
+        <span>Ваш номер телефона</span>
+        <input name="Телефон" class="phone-input" type="text" required>
       </label>
       <button type="submit" class="btn">
         Оставить заявку
@@ -1050,15 +1054,22 @@
     </div>
     <div class="modal__title">
       Здравствуйте! <br>
-      Пожалуйста, оставьте свои контактные данные, мы свяжемся с вами в ближайшее время.
+      Пожалуйста, оставьте свои контактные данные, <br> мы свяжемся с вами в ближайшее время.
     </div>
-    <form action="mail.php" method="post">
-      <label>
-        Ваше имя
-        <input name="user_name" type="text" required>
+    <form>
+      <input type="text" name="Название формы" value="Заказать звонок" style="display: none !important;">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="SMM Агенство Артема Алексеева">
+      <input type="hidden" name="admin_email" value="info@lvan-dyadyura.ru">
+      <input type="hidden" name="form_subject" value="Заявка с сайта">
+      <!-- END Hidden Required Fields -->
+      <label class="label-hover">
+        <span>Ваше имя</span>
+        <input name="Имя" type="text" required>
       </label>
-      <label>
-        <input class="phone-input" name="user_phone" type="text" placeholder="Ваш номер телефона" required>
+      <label class="label-hover">
+        <span>Ваш номер телефона</span>
+        <input name="Телефон" class="phone-input" type="text" required>
       </label>
       <button type="submit" class="btn">
         Заказать звонок
@@ -1082,16 +1093,24 @@
     </div>
     <div class="modal__title">
       Здравствуйте! <br>
-      Для получения бесплатной стратегии продвижения вашего бизнеса в сети, пожалуйста, заполните форму ниже.
+      Для получения бесплатной стратегии <br> продвижения вашего бизнеса в сети,<br> пожалуйста, заполните форму ниже.
+      <br>
       В ближайшее время мы с вами свяжемся!
     </div>
-    <form action="mail.php" method="post">
-      <label>
-        Ваше имя
-        <input name="user_name" type="text" required>
+    <form>
+      <input type="text" name="Название формы" value="Получить стратегию" style="display: none !important;">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="SMM Агенство Артема Алексеева">
+      <input type="hidden" name="admin_email" value="info@lvan-dyadyura.ru">
+      <input type="hidden" name="form_subject" value="Заявка с сайта">
+      <!-- END Hidden Required Fields -->
+      <label class="label-hover">
+        <span>Ваше имя</span>
+        <input name="Имя" type="text" required>
       </label>
-      <label>
-        <input class="phone-input" name="user_phone" type="text" placeholder="Ваш номер телефона" required>
+      <label class="label-hover">
+        <span>Ваш номер телефона</span>
+        <input name="Телефон" class="phone-input" type="text" required>
       </label>
       <button type="submit" class="btn">
         Получить стратегию
@@ -1115,17 +1134,24 @@
     </div>
     <div class="modal__title">
       Здравствуйте! <br>
-      Стоимость продвижения проекта в социальных сетях или интернете рассчитывается индивидуально.
-      Для получения бесплатной консультации и расчета, пожалуйста, заполните форму ниже.
+      Стоимость продвижения проекта в социальных сетях <br> или интернете рассчитывается индивидуально. <br>
+      Для получения бесплатной консультации и расчета, <br> пожалуйста, заполните форму ниже. <br>
       В ближайшее время мы с вами свяжемся!
     </div>
-    <form action="mail.php" method="post">
-      <label>
-        Ваше имя
-        <input name="user_name" type="text" required>
+    <form>
+      <input type="text" name="Название формы" value="Рассчитать стоимость" style="display: none !important;">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="SMM Агенство Артема Алексеева">
+      <input type="hidden" name="admin_email" value="info@lvan-dyadyura.ru">
+      <input type="hidden" name="form_subject" value="Заявка с сайта">
+      <!-- END Hidden Required Fields -->
+      <label class="label-hover">
+        <span>Ваше имя</span>
+        <input name="Имя" type="text" required>
       </label>
-      <label>
-        <input name="user_phone" class="phone-input" type="text" placeholder="Ваш номер телефона" required>
+      <label class="label-hover">
+        <span>Ваш номер телефона</span>
+        <input name="Телефон" class="phone-input" type="text" required>
       </label>
       <button type="submit" class="btn">
         Рассчитать стоимость
@@ -1149,17 +1175,25 @@
     </div>
     <div class="modal__title">
       Здравствуйте! <br>
-      Специальный бонус - Чек лист "20 способов продвижения в социальных сетях"
+      Специальный бонус - чек лист <br>
+      "Продвижение в социальных сетях"
     </div>
-    <form action="mail.php" method="post">
-      <label>
-        Ваше имя
-        <input name="user_name" type="text" required>
+    <form id="form-modal">
+      <input type="text" name="Название формы" value="Забрать бонус" style="display: none !important;">
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="SMM Агенство Артема Алексеева">
+      <input type="hidden" name="admin_email" value="info@lvan-dyadyura.ru">
+      <input type="hidden" name="form_subject" value="Заявка с сайта">
+      <!-- END Hidden Required Fields -->
+      <label class="label-hover">
+        <span>Ваше имя</span>
+        <input name="Имя" type="text" required>
       </label>
-      <label>
-        <input class="phone-input" name="user_phone" type="text" placeholder="Ваш номер телефона" required>
+      <label class="label-hover">
+        <span>Ваш номер телефона</span>
+        <input name="Телефон" class="phone-input" type="text" required>
       </label>
-      <button type="submit" class="btn">
+      <button class="btn"> 
         Забрать бонус
       </button>
       <div class="modal__signature">
