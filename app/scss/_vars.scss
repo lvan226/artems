@@ -13,3 +13,7 @@ $blue: #66bbff;
   font-family: 'SF Pro Display';
   font-weight: 600;
 }
+@mixin sf700 {
+  font-family: 'SFProDisplay-Bold';
+  font-weight: 700;
+}
